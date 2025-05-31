@@ -31,7 +31,7 @@ func (t *Tabby) AddLine(args ...interface{}) {
 	fmt.Fprintf(t.writer, formatString, args...)
 }
 
-// AddHeader will write a new table line followed by a seperator
+// AddHeader will write a new table line followed by a separator
 func (t *Tabby) AddHeader(args ...interface{}) {
 	t.AddLine(args...)
 	t.addSeparator(args)
